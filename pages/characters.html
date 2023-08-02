@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../styles/charactes.css">
+</head>
+<body>
+    <div class="topnav">
+       <a href="/index.html">Home</a>
+       <a href="/pages/seasons.html">Seasons</a>
+       <a class="active" href="/pages/characters.html">Characteres</a>
+    </div>
+
+    <div class="filter-container">
+        <div class="filters-panel">
+           <label class="text-filter"> Name: </label>
+           <input id="name" class="input-filter" />
+           <label class="text-filter"> Status: </label>
+           <select id="status"  class="input-filter">
+              <option></option>
+              <option>alive</option>
+              <option>dead</option>
+              <option>unknow</option>
+           </select>
+           <label class="text-filter"> Species: </label>
+           <input id="species" class="input-filter" />
+           <label class="text-filter"> Gender: </label>
+           <select id="gender" class="input-filter">
+            <option></option>
+            <option>female</option>
+            <option>male</option>
+            <option>genderless</option>
+            <option>unknow</option>
+         </select>
+         <button id="search" class="button-filter"> Search</button>   
+        </div>
+        <div class="cards-container"></div>
+    </div>
+    <div class="description-panel">
+        <div id="cards-container" class="description-content">
+        </div>
+    </div>
+    <div class="pagination-container">
+        <div class="center">
+            <div id="pagination" class="pagination">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../scripts/characters.js"></script>
+</html>
